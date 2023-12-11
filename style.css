@@ -37,3 +37,12 @@ a {
   display: inline-block;
   margin: 0 0 10px 24px;
 }
+
+/* Media query untuk perangkat dengan lebar layar maksimum 600px (hp) */
+@media only screen and (max-width: 600px) {
+  /* Gaya khusus untuk perangkat dengan lebar layar maksimum 600px di sini */
+  article > p {
+    margin-left: 18px;
+    font-size: 14px;
+  }
+}
