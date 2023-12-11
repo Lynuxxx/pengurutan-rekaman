@@ -23,7 +23,7 @@ function bubbleSort(arr) {
     for (let i = 1; i < arr.length; i++) {
       if (arr[i] < arr[i - 1]) {
         // Menampilkan informasi jika ada pertukaran
-        resultsContainer.innerHTML += `<p> X[${i + 1}] vs X[${i}] atau ${arr[i]} dengan ${arr[i - 1]}  <span class="tab"> => </span>  pertukaran karena X[i] <p X[i-1], berarti X[${i + 1}] = ${arr[i - 1]}<br> </p>`;
+        resultsContainer.innerHTML += `<p> X[${i + 1}] vs X[${i}] atau ${arr[i]} dengan ${arr[i - 1]}  <span class="tab"> => </span>  pertukaran karena X[i] < X[i-1], berarti X[${i + 1}] = ${arr[i - 1]}<br> </p>`;
         // Melakukan pertukan dengan bantuan variabel 'temp'
         let temp = arr[i - 1];
         arr[i - 1] = arr[i];
@@ -35,7 +35,7 @@ function bubbleSort(arr) {
     }
 
     // Menampilkan hasil akhir per-iterasi
-    resultsContainer.innerHTML += `<p> Hasil setelah iterasi ke-${count} : ${arr} <br><br> </p>`;
+    resultsContainer.innerHTML += `<p> Hasil setelah iterasi ke-${count} : ${arr.join(', ')} <br><br> </p>`;
     count++;
   }
 }

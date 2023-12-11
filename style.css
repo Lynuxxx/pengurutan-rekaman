@@ -10,12 +10,14 @@ section > h2 {
   padding: 10px 0;
   border: 1px solid grey;
 }
+
 /* article > h4 {
 margin-left: 25px;
-}
+}*/
+
 article > p {
-margin-left: 45px;
-} */
+  margin-left: 45px;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -26,4 +28,12 @@ form {
 .tab {
   display: inline-block;
   margin: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(117, 117, 246);
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 0 10px 24px;
 }
